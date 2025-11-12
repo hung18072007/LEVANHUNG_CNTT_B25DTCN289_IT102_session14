@@ -18,6 +18,6 @@ int count(int arr[],int n){
 	for(i=0;i<n;i++){
 		printf("\narr[%d]=%d",i,arr[i]);
 	}
-	return arr[i];
 }
+
 
