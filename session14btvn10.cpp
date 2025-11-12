@@ -46,9 +46,14 @@ int main(){
                 printf("b. Sap xep tang dan\n");
                 printf("Chon: ");
                 scanf(" %c", &c);
-                if(c == 'a') sapXepGiam(arr, n);
-                else if(c == 'b') sapXepTang(arr, n);
-                else printf("Lua chon khong hop le!\n");
+                if(c == 'a'){
+                    sapXepGiam(arr, n);
+                }
+                else if(c == 'b'){
+                    sapXepTang(arr, n);
+                }else{
+                    printf("Lua chon khong hop le!\n");
+                }
                 break;
             }
 
@@ -58,7 +63,9 @@ int main(){
                 printf("b. Tim kiem nhi phan\n");
                 printf("Chon: ");
                 scanf(" %c", &c);
-                if(c == 'a') timKiemTuyenTinh(arr, n);
+                if(c == 'a'){
+                    timKiemTuyenTinh(arr, n);
+                }
                 else if(c == 'b') {
                     sapXepTang(arr, n); 
                     timKiemNhiPhan(arr, n);
@@ -206,4 +213,5 @@ void displayMenu(void){
     printf("8. Thoat\n");
     printf("------------------------------------------\n");
 }
+
 
